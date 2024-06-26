@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 25px 30px 25px 15px;
+  display: grid;
+  gap: 1.5rem;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.testimonials:last-child {
+}
+
+.testimonials {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  /* margin: 1.4rem; */
+}
+
+article.daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+
+article.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+article.jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+
+article.patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+article.kira {
+  background-color: hsl(0, 0%, 100%);
+}
+
+img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+
+h2 {
+  margin-bottom: 4px;
+}
+
+h2.colored {
+  color: hsl(217, 19%, 35%);
+}
+
+.position {
+  color: hsl(0, 0%, 81%);
+}
+
+.description {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.statement {
+  color: hsl(0, 0%, 81%);
+  padding-bottom: 1rem;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+p.black {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .main {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
